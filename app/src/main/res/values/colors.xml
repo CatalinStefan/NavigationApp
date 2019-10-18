@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+
+    <color name="start_fragment">#90CAF9</color>
+    <color name="login_fragment">#E6EE9C</color>
+    <color name="signup_fragment">#A5D6A7</color>
+    <color name="profile_fragment">#FF8A65</color>
+    <color name="main_fragment">#CE93D8</color>
+</resources>
