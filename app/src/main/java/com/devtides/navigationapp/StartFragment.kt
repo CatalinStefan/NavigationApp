@@ -26,7 +26,7 @@ class StartFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         loginButton.setOnClickListener {
-            val action = StartFragmentDirections.actionGoToLogin()
+            val action = StartFragmentDirections.actionGoToLogin("John")
             Navigation.findNavController(it).navigate(action)
         }
 

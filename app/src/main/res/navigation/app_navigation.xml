@@ -25,6 +25,9 @@
         <action
             android:id="@+id/actionGoToProfile"
             app:destination="@id/profileFragment" />
+        <argument
+            android:name="userName"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/signupFragment"

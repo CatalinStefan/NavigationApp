@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.navArgs
 import kotlinx.android.synthetic.main.fragment_login.*
 
 /**
@@ -24,6 +25,11 @@ class LoginFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        arguments?.let {
+            val userName = LoginFragmentArgs.fromBundle(it).userName
+            usernameField.setText(userName)
+        }
+
         button.setOnClickListener {
             val action = LoginFragmentDirections.actionGoToProfile()
             Navigation.findNavController(it).navigate(action)
